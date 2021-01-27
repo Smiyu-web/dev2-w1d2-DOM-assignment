@@ -11,9 +11,10 @@ function isTouching(a, b) {
 
 const init = () => {
   //get the avatar
-  const avatar = document.getElementById('avatar');
+  const avatar = document.querySelector('img');
+
   //get the coin
-  const coin = document.getElementById('coin');
+  const coin = document.querySelectorAll('img')[1];
 
   moveCoin();
   window.addEventListener('keyup', function(e){
@@ -54,7 +55,6 @@ const moveCoin = () => {
   coin.style.top = `${x}px`;
   // coin.style. ?? = ??
   coin.style.left = `${y}px`;
-
 }
 
 init();
